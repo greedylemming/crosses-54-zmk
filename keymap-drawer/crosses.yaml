@@ -1,98 +1,208 @@
 layout: {zmk_keyboard: crosses, layout_name: gggw_crosses_54_layout}
 layers:
-  Base:
-  - '~'
-  - '1'
-  - '2'
-  - '3'
-  - '4'
-  - '5'
-  - '6'
-  - '7'
-  - '8'
-  - '9'
-  - '0'
-  - '`'
+  BASE:
+  - {type: none}
+  - $$mdi:undo$$
+  - $$mdi:content-cut$$
+  - $$mdi:content-copy$$
+  - {type: none}
+  - $$mdi:content-paste$$
+  - MUTE
+  - VOL DN
+  - VOL UP
+  - PREV
+  - PP
+  - NEXT
   - $$mdi:keyboard-tab$$
   - Q
   - W
-  - E
-  - R
-  - T
-  - Y
-  - U
-  - I
-  - O
-  - P
-  - $$mdi:backspace$$
-  - $$mdi:apple-keyboard-control$$
-  - A
-  - S
-  - D
   - F
-  - G
-  - H
+  - P
+  - B
   - J
-  - K
   - L
-  - ;
-  - ''''
-  - $$mdi:apple-keyboard-shift$$
+  - U
+  - Y
+  - Å
+  - Ä
+  - {type: none}
+  - {t: A, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: R, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: S, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: T, h: '$$mdi:apple-keyboard-command$$'}
+  - G
+  - M
+  - {t: N, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: E, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: I, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: O, h: '$$mdi:apple-keyboard-shift$$'}
+  - Ö
+  - {type: none}
   - Z
   - X
   - C
+  - D
   - V
-  - B
-  - N
-  - M
+  - K
+  - H
   - {t: ',', s: ;}
   - {t: ., s: ':'}
-  - /
-  - $$mdi:keyboard-esc$$
-  - {t: LGUI, h: Mouse}
-  - Lower
-  - $$mdi:keyboard-space$$
-  - $$mdi:keyboard-return$$
-  - Raise
+  - '-'
+  - {t: '''', s: '"'}
+  - {t: '$$mdi:keyboard-esc$$', h: SYM}
+  - {t: '$$mdi:apple-keyboard-shift$$', h: NUM}
+  - {t: Ctl+B, h: NAV}
+  - {t: '$$mdi:keyboard-return$$', h: NAV}
+  - {t: '$$mdi:keyboard-space$$', h: NUM}
+  - {t: '$$mdi:backspace$$', h: SYM}
+  SYM:
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - ^
+  - '{'
+  - '}'
+  - $
+  - '!'
+  - {type: none}
+  - {type: none}
+  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
-  Lower:
-  - '~'
-  - '1'
-  - '2'
-  - '3'
-  - '4'
-  - '5'
-  - '6'
-  - '7'
-  - '8'
-  - '9'
-  - '0'
+  - $$mdi:apple-keyboard-command$$
+  - {type: none}
+  - '#'
+  - (
+  - )
+  - ;
+  - '?'
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - '@'
+  - ':'
+  - {t: ',', s: ;}
+  - {t: ., s: ':'}
+  - '-'
+  - {type: none}
+  - {type: held}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: held alternate}
+  NUM:
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
   - '`'
-  - $$mdi:keyboard-tab$$
-  - '1'
-  - '2'
-  - '3'
-  - '4'
-  - '5'
-  - '6'
+  - <
+  - '>'
+  - '-'
+  - '|'
+  - {type: none}
   - '7'
   - '8'
   - '9'
-  - '0'
-  - $$mdi:backspace$$
-  - $$mdi:bluetooth-off$$
-  - {h: '1', s: '$$mdi:bluetooth-connect$$'}
-  - {h: '2', s: '$$mdi:bluetooth-connect$$'}
-  - {h: '3', s: '$$mdi:bluetooth-connect$$'}
-  - {h: '4', s: '$$mdi:bluetooth-connect$$'}
-  - {h: '5', s: '$$mdi:bluetooth-connect$$'}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {t: '~', h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: '*', h: '$$mdi:apple-keyboard-control$$'}
+  - {t: /, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: '=', h: '$$mdi:apple-keyboard-command$$'}
+  - '&'
+  - {type: none}
+  - {t: '4', h: '$$mdi:apple-keyboard-command$$'}
+  - {t: '5', h: '$$mdi:apple-keyboard-option$$'}
+  - {t: '6', h: '$$mdi:apple-keyboard-control$$'}
+  - {t: '0', h: '$$mdi:apple-keyboard-shift$$'}
+  - {type: none}
+  - {type: none}
+  - \
+  - +
+  - '['
+  - ']'
+  - '%'
+  - {type: none}
+  - '1'
+  - '2'
+  - '3'
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: held}
+  - {type: none}
+  - {type: none}
+  - {type: held alternate}
+  - {type: none}
+  NAV:
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - HOME
+  - $$mdi:transfer-down$$
+  - $$mdi:transfer-up$$
+  - END
+  - {type: none}
+  - {type: none}
+  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-command$$
+  - {type: none}
+  - {type: none}
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-up-bold$$
   - $$mdi:arrow-right-bold$$
   - {type: none}
   - {type: none}
-  - $$mdi:apple-keyboard-shift$$
   - {type: none}
   - {type: none}
   - {type: none}
@@ -104,68 +214,13 @@ layers:
   - {type: none}
   - {type: none}
   - {type: none}
-  - {t: LGUI, h: Mouse}
+  - {type: none}
+  - {type: none}
   - {type: held}
-  - $$mdi:keyboard-space$$
-  - $$mdi:keyboard-return$$
+  - {type: held alternate}
   - {type: none}
-  - $$mdi:apple-keyboard-option$$
-  Raise:
-  - '~'
-  - '1'
-  - '2'
-  - '3'
-  - '4'
-  - '5'
-  - '6'
-  - '7'
-  - '8'
-  - '9'
-  - '0'
-  - '`'
-  - $$mdi:keyboard-tab$$
-  - '!'
-  - '@'
-  - '#'
-  - $
-  - '%'
-  - ^
-  - '&'
-  - KP MULTIPLY
-  - (
-  - )
-  - $$mdi:backspace$$
-  - $$mdi:apple-keyboard-control$$
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - '-'
-  - '='
-  - '['
-  - ']'
-  - \
-  - '`'
-  - $$mdi:apple-keyboard-shift$$
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - {type: none}
-  - _
-  - +
-  - '{'
-  - '}'
-  - '|'
-  - '~'
-  - {t: LGUI, h: Mouse}
-  - {type: none}
-  - $$mdi:keyboard-space$$
-  - $$mdi:keyboard-return$$
-  - {type: held}
-  - $$mdi:apple-keyboard-option$$
-  Mouse:
+  - DEL
+  MOUSE:
   - {type: none}
   - {type: none}
   - {type: none}
@@ -177,7 +232,7 @@ layers:
   - {type: none}
   - {type: none}
   - {type: none}
-  - '&studio_unlock'
+  - {type: none}
   - {type: none}
   - {type: none}
   - {type: none}
@@ -197,6 +252,9 @@ layers:
   - {t: '$$mdi:mouse-left-click$$', h: left}
   - {type: none}
   - {type: none}
+  - {t: '$$mdi:mouse-left-click$$', h: left}
+  - {t: '$$mdi:mouse$$', h: middle}
+  - {t: '$$mdi:mouse-right-click$$', h: right}
   - {type: none}
   - {type: none}
   - {type: none}
@@ -213,10 +271,62 @@ layers:
   - {type: none}
   - {type: none}
   - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  FN:
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {h: '1', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '2', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '3', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '4', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '5', s: '$$mdi:bluetooth-connect$$'}
+  - $$mdi:bluetooth-off$$
+  - {h: '1', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '2', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '3', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '4', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '5', s: '$$mdi:bluetooth-connect$$'}
+  - OUT TOG
+  - OUT TOG
+  - F7
+  - F8
+  - F9
+  - F10
+  - {type: none}
+  - {type: none}
+  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-command$$
+  - {type: none}
+  - {type: none}
+  - F4
+  - F5
+  - F6
+  - F11
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - {type: none}
+  - F1
+  - F2
+  - F3
+  - F12
   - {type: none}
   - {type: held}
-  - {type: held alternate}
   - {type: none}
+  - {type: held}
+  - {type: held}
   - {type: none}
-  - {type: held alternate}
-  - {type: none}
+  - {type: held}
